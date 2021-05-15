@@ -8,7 +8,7 @@ add_library(rpistepper SHARED
 
 set_target_properties(rpistepper PROPERTIES VERSION 0.1)
 set_target_properties(rpistepper PROPERTIES SOVERSION 0.1)
-set_target_properties(rpistepper PROPERTIES PUBLIC_HEADER include/stepper.hpp)
+set_target_properties(rpistepper PROPERTIES PUBLIC_HEADER src/stepper.hpp)
 
 target_include_directories(rpistepper PRIVATE include)
 target_link_libraries(rpistepper pigpio rt)
